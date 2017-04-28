@@ -150,6 +150,7 @@ func (n *EvalValidateProvisioner) validateConnConfig(connConfig *ResourceConfig)
 		BastionUser       interface{} `mapstructure:"bastion_user"`
 		BastionPassword   interface{} `mapstructure:"bastion_password"`
 		BastionPrivateKey interface{} `mapstructure:"bastion_private_key"`
+		RemoteForward     interface{} `mapstructure:"remote_forward"`
 
 		// For type=winrm only (enforced in winrm communicator)
 		HTTPS    interface{} `mapstructure:"https"`
